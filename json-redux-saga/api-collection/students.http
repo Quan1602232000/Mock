@@ -1,0 +1,60 @@
+@baseUrl = http://localhost:4000/api
+@resourceName = users
+
+# Categories
+
+# @name getAll
+GET {{baseUrl}}/{{resourceName}}
+
+#####
+
+# @name filter
+# Lọc sản phẩm 
+#gte: greater than or equal (lớn hơn hoặc bằng)
+# ?color=silver&price_gte=200 (Lấy ra những product có màu là silver và giá lớn hơn 200)
+GET {{baseUrl}}/{{resourceName}}/?_totalRows
+
+#####
+
+# @name paginate
+# phân trang 
+# ?_page=1: thứ tự trang _limit=5: số item có trên mỗi trang
+GET {{baseUrl}}/{{resourceName}}?name=adadad&_page=1&_limit=5
+
+#####
+
+# @name sort
+# Sắp xếp 
+# ?_sort=price&_order=asc sắp xếp theo price và sắp xếp tăng dần
+GET {{baseUrl}}/{{resourceName}}?_sort=price&_order=asc&brand=Xe tay ga&page=1&_limit=5
+
+#####
+
+# @name add
+POST {{baseUrl}}/{{resourceName}}
+Content-Type:  application/json
+
+{
+    "userId": "2",
+    "name": "SH 2019",
+    "price": 300000,
+    "brand": "SH",
+    "city":"Hà Nội",
+    "active":true,
+    "description":"xe rất là tốt",
+    "date":10
+}
+
+#####
+
+# @name update
+PUT {{baseUrl}}/{{resourceName}}/10
+Content-Type:  application/json
+{   
+    "Name": "AIR BALDE 2020"    
+}
+
+#####
+
+# @name remove
+DELETE {{baseUrl}}/{{resourceName}}/3
