@@ -1,0 +1,191 @@
+
+/* TaskDetail__header */
+
+.taskDetail__header{
+    padding: 68px 100px 80px 100px;
+}
+
+.taskDetail__header{
+    display: flex;
+}
+
+.taskDetail__header__btnBack{
+    width: 99px;
+    height: 60px;
+    border: none;
+    background-color: #F3477A;
+    margin-right: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.taskDetail__header__btnBack i{
+    font-size: 30px;
+    color: white;
+}
+
+.taskDetail__header__title{
+    margin-right: 16px;
+}
+
+.taskDetail__header__title--main,
+.taskDetail__header__title--hastag{
+    margin: 0;
+}
+
+.taskDetail__header__title--main{
+    font-weight: 1000;
+    font-size: 36px;
+    color: #f3477a;
+    font-family: 'Poppins', sans-serif;
+    margin-top: -14px;
+}
+
+.taskDetail__header__title--hastag{
+    font-family: 'Poppins', sans-serif;
+    font-weight: normal;
+    font-size: 18px;
+    color: #5C626D;
+}
+
+.taskDetail__header__btn{
+    width: 139px;
+    height: 34px;
+    border: none;
+    border-radius: 10px;
+    color: white;
+}
+
+.taskDetail__header__btn i{
+    margin-right: 5px;
+}
+
+.taskDetail__header__btn--delete{
+    background-color: #884CB2;
+}
+
+.taskDetail__header__btn--edit{
+    background-color: #EB5757;
+    margin-right: 16px;
+}
+
+/* ---------------------------------------------------------------------------------------------- */
+/* TaskDetail__Info */
+
+.taskDetail__info{
+    padding: 0px 200px;
+    margin-bottom: 100px;
+}
+
+.taskDetail__info__list{
+    width: calc(100% - 80px);
+    background-color: #F3F3F3;
+    border-radius: 20px;
+    padding: 36px 40px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+}
+
+.taskDetail__info__item{
+    display: grid;
+    grid-template-columns: 30% 70%;
+    margin-bottom: 25px;
+}
+
+.taskDetail__info__item__title{
+    margin: 0;
+    padding: 10px 15px;
+}
+.taskDetail__info__item__title--priority,
+.taskDetail__info__item__title--status{
+    border-radius: 8px;
+    text-align: center;
+    width: 30%;
+}
+
+/* ------------------------------------------------------------------------------------- */
+/* Modal_Edit AND Modal_Delete */
+.Modal_Delete
+{
+    display: block; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 30px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  .Modal_Delete__Detail{
+    background-color: #fefefe;
+    margin: auto;
+    border: 1px solid #888;
+    height: auto;
+    border-radius: 8px;
+  }
+  .Modal_Delete__Detail{
+      width: 25%;
+      padding: 25px 25px;
+  }
+  
+  .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+
+
+
+
+
+.Modal_Delete__Detail--title{
+    font-weight: bold;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.Modal_Delete__Detail--btn{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+.Modal_Delete__Detail--btn--Delete,
+.Modal_Delete__Detail--btn--Cancel{
+    width: 139px;
+    height: 34px;
+    border: none;
+    border-radius: 10px;
+}
+
+.Modal_Delete__Detail--btn--Delete{
+    background-color: #EB5757;
+    color:white
+}
+
+.Modal_Delete__Detail--btn--Cancel{
+    background-color: white;
+    color: #1D262C;
+}
+
+
+
+/* -------------------------------------------------------------------------------- */
+
+

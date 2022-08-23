@@ -1,0 +1,81 @@
+.signin_Page{
+    background-color: #884cb2;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 45% 55%;
+}
+
+.signin_Page p{
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.signin_Page__Title{
+    padding: 200px 150px;
+}
+
+.signin_Page__Title p{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 72px;
+    line-height: 82px;
+    color: white;
+    width: 555px;
+    height: 246px;
+}
+
+.signin_Page__Form{
+    padding: 200px 150px;
+    text-align: center;
+}
+
+.signin_Page__Form--Detail input{
+    display: block;
+}
+
+.signin_Page__Form--Title{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 21px;
+    color: white;
+    margin-bottom: 23px !important;
+}
+
+.signin_Page__Form--Detail input{
+    padding-left: 44px;
+    width: 100%;
+    height: 60px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    color: #FFFFFF;
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    border-radius: 4px 4px 0px 0px;
+    background-color: #884cb2;
+    -moz-box-sizing: border-box; 
+    -webkit-box-sizing: border-box; 
+     box-sizing: border-box; 
+}
+
+.signin_Page__Form--Detail input::placeholder{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    color: #FFFFFF;
+}
+
+.signin_Page__Form--Detail--button{
+    height: 60px;
+    width: 100%;
+    background-color: #1D262C;
+    border-radius: 0px 0px 4px 4px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    color: #F3F3F3;
+}
+
+.errorlogin{
+    border: 2px solid #dd5044 !important;
+}
